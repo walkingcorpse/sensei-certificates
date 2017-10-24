@@ -104,8 +104,8 @@ class WooThemes_Sensei_PDF_Certificate {
 	public function generate_pdf( $path = '' ) {
 
 		// include the pdf library
-		$root_dir = dirname( __FILE__ ) . DIRECTORY_SEPARATOR;
-		require_once( $root_dir . '../lib/tfpdf/tfpdf.php' );
+		$root_dir = trailingslashit( dirname( dirname( __FILE__ ) ) );
+		require_once( $root_dir . 'vendor/autoload.php' );
 
 		do_action( 'sensei_certificates_set_background_image', $this );
 
@@ -125,7 +125,7 @@ class WooThemes_Sensei_PDF_Certificate {
 		// Create the pdf
 		// TODO: we're assuming a standard DPI here of where 1 point = 1/72 inch = 1 pixel
 		// When writing text to a Cell, the text is vertically-aligned in the middle
-		$fpdf = new tFPDF( $orientation, 'pt', array( $image_attr[0], $image_attr[1] ) );
+		$fpdf = new \tFPDF\PDF( $orientation, 'pt', array( $image_attr[0], $image_attr[1] ) );
 
 		$fpdf->AddPage();
 		$fpdf->SetAutoPageBreak( false );

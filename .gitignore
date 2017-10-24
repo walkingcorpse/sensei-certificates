@@ -2,3 +2,5 @@
 node_modules
 lib/tfpdf/font/unifont/*.cw.dat
 lib/tfpdf/font/unifont/*.mtx.php
+
+/vendor/

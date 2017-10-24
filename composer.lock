@@ -1,0 +1,70 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "d887e820b14fad246b5b18530cbcf213",
+    "packages": [
+        {
+            "name": "docnet/tfpdf",
+            "version": "v2.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DocnetUK/tfpdf.git",
+                "reference": "d63b06670ee9066eb5e8a8cd8ebfea39094a3a0b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DocnetUK/tfpdf/zipball/d63b06670ee9066eb5e8a8cd8ebfea39094a3a0b",
+                "reference": "d63b06670ee9066eb5e8a8cd8ebfea39094a3a0b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">= 5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "5.5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "tFPDF\\": "src/tFPDF/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Ian Back",
+                    "email": "ianb@bpm1.com"
+                },
+                {
+                    "name": "Dave Blencowe",
+                    "email": "dblencowe@gmail.com"
+                },
+                {
+                    "name": "David Wilcock",
+                    "email": "dwilcock@doc-net.com"
+                }
+            ],
+            "description": "tfpdf",
+            "homepage": "http://github.com/DocnetUK/tfpdf",
+            "keywords": [
+                "pdf"
+            ],
+            "time": "2017-10-23T09:41:41+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

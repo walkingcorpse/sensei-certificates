@@ -1,0 +1,9 @@
+{
+    "name": "a8c/sensei-certificates",
+    "description": "Sensei Certificates",
+    "type": "wordpress-plugin",
+    "require": {
+        "docnet/tfpdf": "^2.0"
+    },
+    "license": "GPLv2"
+}
